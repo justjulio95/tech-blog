@@ -1,0 +1,30 @@
+{
+  "name": "tech-blog",
+  "version": "1.0.0",
+  "description": "A site where developers can publish their blog posts and comment on other developers' posts.",
+  "main": "server.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/justjulio95/tech-blog.git"
+  },
+  "author": "Julio Suarez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/justjulio95/tech-blog/issues"
+  },
+  "homepage": "https://github.com/justjulio95/tech-blog#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "connect-session-sequelize": "^7.1.4",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "express-handlebars": "^6.0.6",
+    "express-session": "^1.17.3",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.21.0"
+  }
+}
