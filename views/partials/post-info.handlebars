@@ -1,0 +1,12 @@
+<article>
+  <div class="card-header">
+    <a href="/post/{{id}}" class="card-title">{{title}}</a>
+  </div>
+  <div class="card-body">
+    {{description}}
+  </div>
+  <div class="meta">
+    {{vote_count}} {{format_plural "point" vote_count}} by {{user.username}} on {{format_date created_at}} |
+    {{comments.length}} {{format_plural "comment" comments.length}}
+  </div>
+</article>

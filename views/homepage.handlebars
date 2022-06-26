@@ -1,18 +1,7 @@
 <ol class="list-group">
   {{#each posts as |post|}}
   <li class="card my-2">
-    <article>
-      <div class="card-header">
-        <a href="/post/{{post.id}}" class="card-title">{{post.title}}</a>
-      </div>
-      <div class="card-body">
-        {{post.description}}
-      </div>
-      <div class="meta">
-        {{post.vote_count}} point(s) by {{post.user.username}} on {{post.created_at}} |
-        {{post.comments.length}}
-      </div>
-    </article>
+    {{> post-info post}}
   </li>
   {{/each}}
 </ol>
