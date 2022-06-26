@@ -19,9 +19,15 @@
           <li class="nav-item">
             <a class="nav-link active" href="/dashboard">Dashboard</a>
           </li>
+          {{#if loggedIn}}
+          <li class="nav-item">
+            <a class="nav-link" href="/" id="logout">Logout</a>
+          </li>
+          {{else}}
           <li class="nav-item">
             <a class="nav-link" href="/login">Login/Signup</a>
           </li>
+          {{/if}} 
         </ul>
       </div>
     </div>
@@ -35,7 +41,9 @@
       Thanks for visiting!
     </footer>
   </div>
-
+  {{#if loggedIn}}
+  <script src="/javascript/logout.js"></script>
+  {{/if}}
 </body>
 
 </html>

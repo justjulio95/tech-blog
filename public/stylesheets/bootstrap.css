@@ -11234,7 +11234,21 @@ th {
   flex-direction: column;
 }
 
-.meta {
+.comment .meta {
   font-size: small;
   margin-left: 15px;
+}
+
+.login {
+  width: 25%;
+}
+
+.login-form {
+  margin-left: 10rem;
+}
+
+.signup-form {
+  position: relative;
+  left: 45rem;
+  bottom: 16rem
 }
