@@ -3,7 +3,6 @@ const sequelize = require('../config/connection');
 const {Post, User, Comment} = require('../models')
 
 router.get('/', (req, res) => {
-  console.log(req.session);
   Post.findAll({
     attributes: [
       'id',
@@ -31,7 +30,7 @@ router.get('/', (req, res) => {
     const posts = dbPostData.map(post => post.get({plain: true}))
     res.render('homepage', {
       posts,
-    loggedIn: req.session.loggedIn
+      loggedIn: req.session.loggedIn
     });
   })
   .catch(err => {
