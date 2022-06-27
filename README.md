@@ -36,3 +36,6 @@ There are currently no tests to run in this application.
 If there are any questions concerning this project, please open an issue or contact me directly at just.julio95@gmail.com.
 
 If you would like to see more of my work, please visit my [Github](https://github.com/justjulio95).
+
+## Preview
+![Preview of Tech-Blog live site](./public/assets/imgs/Screen%20Shot%202022-06-27%20at%201.03.54%20PM.png)
